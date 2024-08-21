@@ -1,0 +1,133 @@
+* { /*通常做網頁時避免麻煩，會先將padding和margin=0，box-size會先設定為border方便控制大小*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: DFkai-sb,sans-serif; /*標楷體,無襯線體*/
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+
+header div.top {
+    padding: 1rem; /*螢幕一個標準字體的大小*/
+    background-image: url(./images/background.png);
+    background-size: cover;
+}
+
+header div.top h1 {
+    font-size: 2.5rem;
+}
+
+header div.top h3 {
+    font-size: 1rem;
+}
+
+header nav {
+    background-color: black;
+}
+/*指定越細越好*/
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+     transition: 0.3s;  /*比瞬間改變顏色更舒服 */
+}
+
+header nav ul li a:hover {
+    color: yellow;
+}
+/* 設定在nav上面的話就只有ul一個child，(children和parent1對1)，所以要設定在nav下面的ul */
+header nav ul { 
+    display: flex;
+    list-style: none;}
+
+header nav ul li { 
+    padding: 0.8rem 1.2rem;
+}
+
+.active {
+    color: yellow;
+}
+
+/* .left figure img {
+    width: 30rem;
+    height: 20rem;
+} */
+
+.left table tr td{
+    border: 2rem;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap; /*他在手機的頁面時也能自動換行 */
+}
+
+main section.left img {
+    width: 90%; /*父元素section的90% */
+}
+
+main section.left {
+    padding: 1rem;
+    flex: 1 1 200px; /*他是flex item，grow-shink-basis */
+}
+main section.left  h3{
+    margin-bottom: 1rem;
+}
+
+main section table {
+    margin-top: 1rem;
+}
+
+section.left table,section.left td {
+    padding: 0.25rem;
+}
+
+main section.right {
+    flex:4 1 500px;
+}
+section.right h3 {
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+}
+/* section.right在所有頁面的p都設定*/ p {  
+    padding: 0.5rem 0rem;
+}
+
+section.right ul {
+    margin-left: 2rem;
+}
+
+/* 韓國棋院*/
+main.noflex {
+    display: block;
+}
+
+section h2,section h3 {
+    font-size: 1.5rem;
+}
+.koreapeople {
+    border:3px solid burlywood;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+}
+
+section div {
+    margin: 2rem;
+}
+main section {
+    padding: 1rem;
+}
+
+div.koreapeople h3 {
+    color:darkcyan;
+    font-size: 1.5rem;
+}
+
+section h4 {
+    color:cadetblue;
+    font-size: 1.05rem;
+}
+.content {
+    margin:1.5rem ;
+}
